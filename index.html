@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>AGR Spices & Foods | Coming Soon</title>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div class="container">
+         <div class="logo">
+            <img src="logo.png" alt="AGR Spices & Foods Logo">
+         </div>
+         <div class="tagline">
+            Pure • Authentic • Traditional Indian Spices
+         </div>
+         <div class="coming">Our Website is Launching Soon</div>
+
+          <div class="desc">
+          AGR Spices & Foods is currently serving customers offline with
+          high-quality and authentic Indian spices.
+          Our online store will be launching soon to bring these flavors directly to your home.
+          </div>
+         <div class="countdown">
+            <div class="time-box">
+               <div id="days" class="time">00</div>
+               <div class="label">Days</div>
+            </div>
+            <div class="time-box">
+               <div id="hours" class="time">00</div>
+               <div class="label">Hours</div>
+            </div>
+            <div class="time-box">
+               <div id="minutes" class="time">00</div>
+               <div class="label">Minutes</div>
+            </div>
+            <div class="time-box">
+               <div id="seconds" class="time">00</div>
+               <div class="label">Seconds</div>
+            </div>
+         </div>
+         <div class="social">
+            <a href="https://www.instagram.com/agr_spices/">Instagram</a>
+            <a href="https://wa.me/917680026060" target="_blank">WhatsApp</a>
+
+            <a href="tel:+91 7680026060">Call</a>
+
+            <a href="https://maps.google.com/?q=AGR+Spices+and+Foods" target="_blank">
+            Location
+            </a>`
+         </div>
+         <footer>
+            © 2026 AGR Spices & Foods. All Rights Reserved.
+         </footer>
+      </div>
+      <script>
+         var launchDate = new Date("May 1, 2026 00:00:00").getTime();
+
+         var timer = setInterval(function(){
+
+         var now = new Date().getTime();
+         var distance = launchDate - now;
+
+         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+         document.getElementById("days").innerHTML = days;
+         document.getElementById("hours").innerHTML = hours;
+         document.getElementById("minutes").innerHTML = minutes;
+         document.getElementById("seconds").innerHTML = seconds;
+
+         },1000);
+
+      </script>
+   </body>
+</html>
